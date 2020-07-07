@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tech Amplifiers</title>
+</head>
+<body>
+<h1>You are on Home Page: {{name}}</h1> <br><br/>
+Please login into {{college}}<br/><br/>
+<form action="{% url 'introduction' %}">
+    <label id="name">Username</label><br/>
+    <input type="text" name="username"/><br/><br/>
+    <label id="pwd">Password</label><br/>
+    <input type="password" name="pass" /><br/>
+    {{errormsg}}<br/>
+    <input type="submit" value="Signin" />
+</form>
+
+</body>
+</html>
